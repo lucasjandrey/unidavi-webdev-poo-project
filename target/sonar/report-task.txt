@@ -2,5 +2,5 @@ projectKey=trabalho.lucas:Sorteador
 serverUrl=http://localhost:9000
 serverVersion=6.7.1.35068
 dashboardUrl=http://localhost:9000/dashboard/index/trabalho.lucas:Sorteador
-ceTaskId=AWDsq_aD_iheUodiRkfp
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AWDsq_aD_iheUodiRkfp
+ceTaskId=AWDsvPeW_iheUodiRkgC
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWDsvPeW_iheUodiRkgC

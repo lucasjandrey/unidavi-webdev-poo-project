@@ -8,23 +8,23 @@ public class Controlador {
    public void iniciaJogo(int modoJogo){
       numeroSorteado = sorteiaNumero(modoJogo);
       int qtdTentativas = buscaTentativas(modoJogo);
-      System.out.println("Modo de jogo ["+modoJogo+"] Selecionado, Você tem "+qtdTentativas+" Tentativas"); 
+      System.err.println("Modo de jogo ["+modoJogo+"] Selecionado, Você tem "+qtdTentativas+" Tentativas"); 
       for (int i = 1; i < qtdTentativas + 1; i++) {
-            System.out.println("Tentativa "+i+" de "+qtdTentativas+" \n");
+            System.err.println("Tentativa "+i+" de "+qtdTentativas+" \n");
             Scanner scanner = new Scanner(System.in);
             int numeroDigitado = scanner.nextInt();
 
             if (numeroSorteado == numeroDigitado){
-                System.out.println("Parabéns, você acertou \n");
+                System.err.println("Parabéns, você acertou \n");
                 break;
             }else{
                 if (numeroDigitado < numeroSorteado){
-                  System.out.println("O Numero sorteado é MAIOR \n");
+                  System.err.println("O Numero sorteado é MAIOR \n");
                 }else{
-                  System.out.println("O Numero sorteado é MENOR \n");
+                  System.err.println("O Numero sorteado é MENOR \n");
                 }
                 if (i==qtdTentativas){
-                   System.out.println("O Numero sorteado foi "+numeroSorteado+" \n");
+                   System.err.println("O Numero sorteado foi "+numeroSorteado+" \n");
                 }   
             }
         } 

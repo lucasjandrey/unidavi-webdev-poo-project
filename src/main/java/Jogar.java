@@ -22,11 +22,11 @@ public class Jogar extends Controlador{
     
     private void Menu(){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Primeiro Programa com Java - Lucas Jandrey \n");
-        System.out.println("Selecione o modo de Jogo \n");
-        System.out.println("[1] - 1 à 20 - 5 Tentativas \n");
-        System.out.println("[2] - 1 à 100 - 6 Tentativas \n");
-        System.out.println("[3] - 1 à 999 - 3 Tentativas(Hard) \n");
+        System.err.println("Primeiro Programa com Java - Lucas Jandrey \n");
+        System.err.println("Selecione o modo de Jogo \n");
+        System.err.println("[1] - 1 à 20 - 5 Tentativas \n");
+        System.err.println("[2] - 1 à 100 - 6 Tentativas \n");
+        System.err.println("[3] - 1 à 999 - 3 Tentativas(Hard) \n");
         setModoJogo(scanner.nextInt());
     }
     
@@ -38,7 +38,7 @@ public class Jogar extends Controlador{
     public int getModoJogo() {
         return modoJogo;
     }
-
+    
     public void setModoJogo(int modoJogo) {
         this.modoJogo = modoJogo;
     }
